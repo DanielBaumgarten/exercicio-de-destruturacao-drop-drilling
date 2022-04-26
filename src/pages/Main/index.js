@@ -1,12 +1,18 @@
 import  './styles.css';
 import EditProfile from '../../components/EditProfile';
 
-function Main({ setName }) {
+function Main({ setName, setAge }) {
     return(
         <main>
-            <EditProfile 
-             setName={setName}
+            <div>
+                <EditProfile 
+                setName={setName}
+                setAge={setAge}
             />
+            </div>
+            <div>
+                PERFIL DO USUÁRIO
+            </div>
         </main>
     )
 }

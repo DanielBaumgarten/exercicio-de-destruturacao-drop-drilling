@@ -1,6 +1,15 @@
 main {
      display: flex;
+}
+
+main div {
+     display: flex;
      align-items: center;
-     justify-content:center;
+     justify-content: center;
+     width: 50%;
      height: calc(100vh - 58px);
+}
+
+main div:first-child{
+     background-color: blueviolet;
 }
