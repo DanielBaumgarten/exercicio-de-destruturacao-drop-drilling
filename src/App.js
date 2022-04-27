@@ -17,6 +17,8 @@ function App() {
   <Main
    setName={setName}
    setAge={setAge}
+   age={age}
+   name={name}
   />
 </>
   );

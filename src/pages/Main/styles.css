@@ -2,7 +2,7 @@ main {
      display: flex;
 }
 
-main div {
+.items-main {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -10,6 +10,6 @@ main div {
      height: calc(100vh - 58px);
 }
 
-main div:first-child{
+.left {
      background-color: blueviolet;
 }
