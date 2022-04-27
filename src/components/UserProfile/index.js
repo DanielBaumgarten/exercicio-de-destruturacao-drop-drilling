@@ -8,7 +8,7 @@ function UserProfile({ name, age }) {
                 <span>{name}</span>
             </div>
             <div>
-                <strong>Age:</strong>
+                <strong>Idade:</strong>
                 <span>{age}</span>
             </div>
         </div>
