@@ -1,11 +1,10 @@
 import './App.css';
 import Main from './pages/Main';
 import Header from './components/Header'
-import { createContext, useState } from 'react';
+import { useState } from 'react';
+import UserContext from './contexts/UserContext';
 
 function App() {
-
-  const UserContext = createContext({})
 
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
@@ -13,16 +12,10 @@ function App() {
   const valuesProvidor = {age, setAge, name, setName}
   return (
     <UserContext.Provider value={valuesProvidor}>
-      <Header 
-        name={name}
-      />
+      
+      <Header />
+      <Main />
 
-      <Main
-        setName={setName}
-        setAge={setAge}
-        age={age}
-        name={name}
-      />
     </ UserContext.Provider>
   );
 }

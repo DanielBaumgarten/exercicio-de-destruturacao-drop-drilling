@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import './styles.css'
+import UserContext from '../../contexts/UserContext';
 
-function EditProfile({ setName, setAge }) {
 
+function EditProfile() {
+
+    const { setName, setAge } = useContext(UserContext);
     const [localName, setLocalName]= useState('');
     const [localAge, setLocalAge]= useState('');
 

@@ -2,20 +2,14 @@ import  './styles.css';
 import EditProfile from '../../components/EditProfile';
 import UserProfile from '../../components/UserProfile';
 
-function Main({ name, age, setName, setAge }) {
+function Main() {
     return(
         <main>
             <div className='items-main left'>
-                <EditProfile 
-                setName={setName}
-                setAge={setAge}
-            />
+                <EditProfile />
             </div>
             <div className='items-main'>
-                <UserProfile
-                 name={name}
-                 age={age}
-              />
+                <UserProfile />
             </div>
         </main>
     );
